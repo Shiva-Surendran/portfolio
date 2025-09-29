@@ -104,8 +104,217 @@ export default function HeroSection() {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-            {/* Additional Project Cards */}
-            {/* Repeat the structure for other projects like Portfolio, CareConnect, etc. */}
+           {/* Portfolio Website */}
+
+            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+
+              <div className="relative h-45 overflow-hidden">
+
+                <img
+
+                  src="/portfolio.png"
+
+                  alt="Portfolio Website"
+
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+
+                  Portfolio Website
+
+                </h3>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">
+
+                  The Current website done using next.js & Tailwind CSS, this portfolio is designed to showcase my best work and skills with a clean, modern layout.
+
+                </p>
+
+              </div>
+
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+
+            </div>
+
+
+
+            {/* CareConnect */}
+
+            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+
+              <div className="relative h-45 overflow-hidden">
+
+                <img
+
+                  src="/cc.gif"
+
+                  alt="CareConnect"
+
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+
+                  CareConnect
+
+                </h3>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">
+
+                  A Flutter app for senior citizen and isolated individuals used for monitoring with emergency alerts like fall detection and
+
+                  noise detection, pill alarms and panic button.
+
+                </p>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">Access it at <a href="https://github.com/careconnect278/"><span className="underline">CareConnect</span></a></p>
+
+              </div>
+
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+
+            </div>
+
+
+
+            {/* 3D Sketches */}
+
+            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+
+              <div className="relative h-45 overflow-hidden">
+
+                <img
+
+                  src="/model.png"
+
+                  alt="3D Sketches"
+
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+
+                  3D Sketches
+
+                </h3>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">
+
+                  A collection of architectural visualization designs I have made
+
+                </p>
+
+              </div>
+
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+
+            </div>
+
+
+
+            {/* HeartGuard Chatbot */}
+
+            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+
+              <div className="relative h-45 overflow-hidden">
+
+                <video
+
+                  src="/hg.mp4"
+
+                  autoPlay
+
+                  loop
+
+                  muted
+
+                  playsInline
+
+                  className="w-full h-full object-cover rounded-lg"
+
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+
+                  HeartGuard Chatbot
+
+                </h3>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">
+
+                  AI chatbot integrated using <span className="font-semibold">IBM WatsonX Studio</span> for analyzing medical results and predicting whether a patient has heart disease — designed for doctors.
+
+                  <br></br>Access it at <a href="https://github.com/VergilX/ibm-skillsbuild-project"><span className="underline">Heartguard</span></a></p>
+
+              </div>
+
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+
+            </div>
+
+
+
+            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+
+              <div className="relative h-45 overflow-hidden">
+
+                <img
+
+                  src="/const.gif"
+
+                  alt="HeartGuard Chatbot"
+
+                  className=" h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              </div>
+
+              <div className="p-6">
+
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
+
+                  Blogs                </h3>
+
+                <p className="text-gray-600 mt-3 leading-relaxed">
+
+                  My blog                </p>
+
+              </div>
+
+              <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
+
+            </div>
 
           </div>
         </div>
