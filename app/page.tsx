@@ -13,10 +13,12 @@ const madi = Ms_Madi({
 
 const extrasans = Open_Sans({
   weight: "700",
+   subsets: ['latin'], 
 });
 
 const sansation = Yrsa({
   weight: "700",
+   subsets: ['latin'], 
 });
 
 export default function HeroSection() {

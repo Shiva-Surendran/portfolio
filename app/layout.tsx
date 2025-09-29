@@ -4,6 +4,7 @@ import "./globals.css"; // Still needed to import Tailwind
 
 const sans = Open_Sans({
   weight: "500",
+   subsets: ['latin'], 
 });
 
 // ... metadata remains the same
