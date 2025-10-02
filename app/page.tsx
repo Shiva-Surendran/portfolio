@@ -1,14 +1,10 @@
 import {
   Ms_Madi,
   Open_Sans, Yrsa
-
 } from "next/font/google";
 
-import { Github, Linkedin, Globe, } from "lucide-react";
-
-
+import { Github, Linkedin, Globe } from "lucide-react";
 import Link from 'next/link';
-
 
 const madi = Ms_Madi({
   subsets: ['latin'],
@@ -23,12 +19,10 @@ const sansation = Yrsa({
   weight: "700",
 });
 
-
 export default function HeroSection() {
   return (
-    <main className="min-h-screen w-full bg-white font-sans text-black overflow-x-hidden  ">
+    <main className="min-h-screen w-full bg-white font-sans text-black overflow-x-hidden">
 
-      {/* Navbar */}
       <header className="flex justify-between items-center px-4 sm:px-6 md:px-10 py-4">
         <div className={`${madi.className} text-2xl sm:text-3xl md:text-4xl font-bold`}>
           Shiva Surendran
@@ -42,109 +36,76 @@ export default function HeroSection() {
         </nav>
       </header>
 
-      {/* Hero Section */}
       <section className="flex flex-col-reverse lg:flex-row items-center justify-between max-w-7xl mx-auto px-6">
-        {/* Left text - CORRECTED FOR MOBILE */}
-       <div className="
-    w-full 
-    lg:w-[%] 
-    bg-[130%_90%]  
-    relative 
-    text-center                         
-    lg:text-left                        
-    
-    /* BACKGROUND APPLIED TO ALL VIEWS (NO PREFIX) */
-    bg-[url('/bg3.jpg')]                 /* Background Image URL */
-    bg-no-repeat      
-    bg-[length:390px_150px]                    /* Prevents image tiling */
-    lg:bg-[length:690px_250px]              /* Fixed Background Size */
-    lg:bg-[190%_23%]                        /* Fixed Background Position (likely off-screen for small view) */
-">  
-          {/* 1. "Hey There, I'm Shiva" - Mid-sized (text-xl to text-2xl) */}
-          <p className="text-2xl  lg:text-[2.1rem] mb-2">Hey There, I'm Shiva</p>
-
-          {/* 2. "Frontend Developer..." - Larger than above (text-2xl to text-3xl) */}
-          <h1 className={`${extrasans.className} 
-          text-2xl  lg:text-[4.1rem]  text-[2rem]
-          font-black leading-tight mb-4
-      `}>
+        <div className="
+          w-full 
+          lg:w-[%] 
+          bg-[130%_90%]  
+          relative 
+          text-center                         
+          lg:text-left                         
+          bg-[url('/bg3.jpg')]                 
+          bg-no-repeat      
+          bg-[length:390px_150px]                    
+          lg:bg-[length:690px_250px]              
+          lg:bg-[190%_23%]
+        ">  
+          <p className="text-2xl lg:text-[2.1rem] mb-2">Hey There, I'm Shiva</p>
+          <h1 className={`${extrasans.className} text-2xl lg:text-[4.1rem] text-[2rem] font-black leading-tight mb-4`}>
             Frontend Developer,<br />
             Architectural Visualizer<br />
             & Digital Designer
           </h1>
-
-        
-
-          {/* Arrow */}
           <div className="hidden md:block mt-12 text-5xl text-gray-400 animate-bounce">
             <span>↘</span>
           </div>
         </div>
 
-        {/* Right Image (Existing Image and Parent classes) */}
         <div className="
-      w-full 
-      flex justify-center items-center lg:block  
-      lg:w-1/2 
-      lg:mb-[-139px]                         
-      mt-8 lg:mt-0                            
-      relative 
-      z-20 
-    ">
+          w-full 
+          flex justify-center items-center lg:block  
+          lg:w-1/2 
+          lg:mb-[-139px]                         
+          mt-8 lg:mt-0                            
+          relative 
+          z-20 
+        ">
           <img
             src="/image1.png"
             alt="Shiva Surendran"
             className="
-          w-35 h-35 
-          rounded-full                       
-          lg:rounded-none                    
-          lg:w-full 
-          lg:h-[700px] 
-          object-cover
-        "
+              w-35 h-35 
+              rounded-full                       
+              lg:rounded-none                    
+              lg:w-full 
+              lg:h-[700px] 
+              object-cover
+            "
           />
         </div>
       </section>
 
-      {/* About Section */}
-     <section id="about" className="bg-black text-white py-25">
-    {/* Corrected Spacing: Use Tailwind's built-in responsive padding (px for horizontal padding) */}
-    <div className="px-6 lg:ml-34 lg:mr-10">
-      
-      {/* Paragraph 1: Centered and text-2xl on Mobile */}
-      <p className="
-          text-center                   /* NEW: Center text on mobile */
-          text-2xl leading-relaxed      /* NEW: text-2xl and adjusted line height for mobile readability */
-          lg:text-left lg:leading-10    /* Override centering and restore large line height on desktop */
-      ">
-        A Computer Science graduate and Frontend Developer focused on building clean
-        and responsive websites that deliver a great user experience.Love to solve technical challenges
-        and fueling a commitment to continuous learning and skills.
-        <br></br>I also have a passion for architectural modelling to help people visualize their plans to a 3d perspective.
-      </p> 
-      
-      <br></br>
-      
-      {/* Paragraph 2: Centered and text-2xl on Mobile */}
-      <p className="
-          text-center                   /* NEW: Center text on mobile */
-          text-2xl leading-relaxed      /* NEW: text-2xl and adjusted line height for mobile readability */
-          lg:text-left lg:leading-10    /* Override centering and restore large line height on desktop */
-      ">
-        Graduated from Cochin University of Science and Technology (CUSAT), Kochi, in 2025
-        with a degree in B.Tech in Computer Science and Engineering (CGPA: 9.2)
-      </p>
-    </div>
-</section>
+      <section id="about" className="bg-black text-white py-25">
+        <div className="px-6 lg:ml-34 lg:mr-10">
+          <p className="text-center text-2xl leading-relaxed lg:text-left lg:leading-10">
+            A Computer Science graduate and Frontend Developer focused on building clean
+            and responsive websites that deliver a great user experience. Love to solve technical challenges
+            and fueling a commitment to continuous learning and skills.
+            <br></br>I also have a passion for architectural modelling to help people visualize their plans to a 3d perspective.
+          </p> 
+          <br></br>
+          <p className="text-center text-2xl leading-relaxed lg:text-left lg:leading-10">
+            Graduated from Cochin University of Science and Technology (CUSAT), Kochi, in 2025
+            with a degree in B.Tech in Computer Science and Engineering (CGPA: 9.2)
+          </p>
+        </div>
+      </section>
 
-
-      <section id="projects" className="bg-white py-20 ${sansation.className} ">
-        <div className={"max-w-7xl mx-auto px-6"}>
+      <section id="projects" className="bg-white py-20 ${sansation.className}">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-5xl font-bold text-left mb-12">Projects</h2>
-          <div className={"  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-            {/* Project Card */}
-            {/* 4F Builders Website */}
             <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45flow-hidden">
                 <img
@@ -154,7 +115,6 @@ export default function HeroSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
                   4F Builders Website
@@ -166,9 +126,7 @@ export default function HeroSection() {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-
-            {/* Portfolio Website */}
-            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+            <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45 overflow-hidden">
                 <img
                   src="/portfolio.png"
@@ -188,8 +146,7 @@ export default function HeroSection() {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-            {/* CareConnect */}
-            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+            <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45 overflow-hidden">
                 <img
                   src="/cc.gif"
@@ -211,8 +168,7 @@ export default function HeroSection() {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-            {/* 3D Sketches */}
-            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+            <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45 overflow-hidden">
                 <img
                   src="/model.png"
@@ -232,8 +188,7 @@ export default function HeroSection() {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-            {/* HeartGuard Chatbot */}
-            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+            <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45 overflow-hidden">
                 <video
                   src="/hg.mp4"
@@ -251,108 +206,77 @@ export default function HeroSection() {
                 </h3>
                 <p className="text-gray-600 mt-3 leading-relaxed">
                   AI chatbot integrated using <span className="font-semibold">IBM WatsonX Studio</span> for analyzing medical results and predicting whether a patient has heart disease — designed for doctors.
-                  <br></br>Access it at <a href="https://github.com/VergilX/ibm-skillsbuild-project"><span className="underline">Heartguard</span></a></p>
+                  <br></br>Access it at <a href="https://github.com/VergilX/ibm-skillsbuild-project"><span className="underline">Heartguard</span></a>
+                </p>
               </div>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
 
-            <div className="group relative  shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
+            <div className="group relative shadow-black hover:shadow-white bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-gray-200">
               <div className="relative h-45 overflow-hidden">
                 <img
                   src="/const.gif"
                   alt="HeartGuard Chatbot"
-                  className=" h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                  className="h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
-                  Blogs                </h3>
+                  Blogs
+                </h3>
                 <p className="text-gray-600 mt-3 leading-relaxed">
-                  My blog                </p>
+                  My blog
+                </p>
               </div>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </div>
-
           </div>
         </div>
       </section>
 
-
-
       <footer className="bg-[#121212] text-gray-400 py-16">
-    {/* Main Grid Container: Now acts as a 1-column stack on mobile/tablet */}
-    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 gap-10 md:grid-cols-3">
-
-        {/* 1. Profile Section - Always full width in this layout */}
-        <div className="mb-8 md:mb-0">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div className="mb-8 md:mb-0">
             <h2 className="text-white font-semibold text-3xl">Shiva{" "} •ശിവ {" "}•शिव</h2>
             <p className="mt-3 leading-relaxed text-lg">
-                A dedicated problem-solver who thrives on learning and building.
+              A dedicated problem-solver who thrives on learning and building.
             </p>
             <p className="text-lg mt-8">© 2025 Shiva. All rights reserved.</p>
-        </div>
+          </div>
 
-        {/* 2. Me Section and 3. Connect Section - Wrapped in a single container */}
-        {/*
-          ON MOBILE (default): This container becomes the full width.
-          ON TABLET/DESKTOP (md:): This section is treated as two separate columns in the main md:grid-cols-3.
-        */}
-        <div className="
+          <div className="
             flex-col gap-10
-            sm:flex-row sm:gap-6 sm:justify-between  /* NEW: Use flex to put children side-by-side on mobile */
-            md:grid md:grid-cols-2 md:gap-10        /* NEW: On MD+, use grid to split this space into 2 columns */
-            md:col-span-2                           /* Allow this block to span the remaining 2 columns on desktop */
-        ">
-            
-            {/* 2. Links Section (Me) */}
+            sm:flex-row sm:gap-6 sm:justify-between  
+            md:grid md:grid-cols-2 md:gap-10        
+            md:col-span-2
+          ">
             <div className="w-1/2 md:w-full hidden md:block">
-                <h3 className="text-white font-semibold mb-4 text-2xl md:text-4xl">Me</h3>
-                <ul className="space-y-3 text-lg md:text-xl">
-                    <li><a href="#projects" className="hover:text-white">Projects</a></li>
-                    <li><a href="#blog" className="hover:text-white">Blog</a></li>
-                    <li><a href="#bookmarks" className="hover:text-white">Sketches</a></li>
-                </ul>
+              <h3 className="text-white font-semibold mb-4 text-2xl md:text-4xl">Me</h3>
+              <ul className="space-y-3 text-lg md:text-xl">
+                <li><a href="#projects" className="hover:text-white">Projects</a></li>
+                <li><a href="#blog" className="hover:text-white">Blog</a></li>
+                <li><a href="#bookmarks" className="hover:text-white">Sketches</a></li>
+              </ul>
             </div>
 
-            {/* 3. Social Icons Section (Connect) */}
             <div className="w-1/2 md:w-full">
-                <h3 className="text-white font-semibold mb-4 text-2xl md:text-4xl">Connect</h3>
-                <div className="flex flex-col space-y-3">
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-lg md:text-xl hover:text-white"
-                    >
-                        <Github /> Github
-                    </a>
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-lg md:text-xl hover:text-white"
-                    >
-                        <Linkedin /> LinkedIn
-                    </a>
-                    <a
-                        href="#"
-                        className="flex items-center gap-2 text-lg md:text-xl hover:text-white"
-                    >
-                        <Globe /> Medium
-                    </a>
-                </div>
+              <h3 className="text-white font-semibold mb-4 text-2xl md:text-4xl">Connect</h3>
+              <div className="flex flex-col space-y-3">
+                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                  <Github /> Github
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                  <Linkedin /> LinkedIn
+                </a>
+                <a href="#" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                  <Globe /> Medium
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-
-    </div>
-</footer>
-
-
-
+      </footer>
     </main>
-
-
-
   );
 }
