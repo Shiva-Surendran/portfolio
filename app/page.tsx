@@ -33,7 +33,7 @@ export default function HeroSection() {
         <nav className="flex items-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base md:text-lg font-bold">
           <Link href="#about" scroll={true} className="hover:underline">ABOUT</Link>
           <a href="#about" className="hover:underline">PROJECTS</a>
-          <button className="bg-gray-200 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base">
+          <button className="hidden md: block bg-gray-200 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base">
             GET IN TOUCH
           </button>
         </nav>
@@ -43,7 +43,7 @@ export default function HeroSection() {
         <div className="
           w-full 
           lg:w-[%] 
-          bg-[130%_90%]  
+          bg-[50%_1005%]  
           relative 
           text-center                         
           lg:text-left                         
@@ -53,8 +53,8 @@ export default function HeroSection() {
           lg:bg-[length:690px_250px]              
           lg:bg-[190%_23%]
         ">  
-          <p className="text-2xl lg:text-[2.1rem] mb-2">Hey There, I'm Shiva</p>
-          <h1 className={`${extrasans.className} text-2xl lg:text-[4.1rem] text-[2rem] font-black leading-tight mb-4`}>
+          <p className="text-[1.3rem] lg:text-[2.1rem] mb-2">Hey There, I'm Shiva</p>
+          <h1 className={`${extrasans.className} text-2xl lg:text-[4.1rem] text-[1.6rem] font-black leading-tight mb-4`}>
             Frontend Developer,<br />
             Architectural Visualizer<br />
             & Digital Designer
@@ -77,12 +77,13 @@ export default function HeroSection() {
             src="/image1.png"
             alt="Shiva Surendran"
             className="
-              w-35 h-35 
+              w-40 h-40 
               rounded-full                       
               lg:rounded-none                    
               lg:w-full 
               lg:h-[700px] 
               object-cover
+              border-3
             "
           />
         </div>
@@ -90,14 +91,14 @@ export default function HeroSection() {
 
       <section id="about" className="bg-black text-white py-25">
         <div className="px-6 lg:ml-34 lg:mr-10">
-          <p className="text-center text-2xl leading-relaxed lg:text-left lg:leading-10">
+          <p className="text-left text-xl leading-relaxed  lg:leading-10">
             A Computer Science graduate and Frontend Developer focused on building clean
-            and responsive websites that deliver a great user experience. Love to solve technical challenges
+            and responsive websites that deliver a great user experience. <br></br><br></br>Love to solve technical challenges
             and fueling a commitment to continuous learning and skills.
             <br></br>I also have a passion for architectural modelling to help people visualize their plans to a 3d perspective.
           </p> 
           <br></br>
-          <p className="text-center text-2xl leading-relaxed lg:text-left lg:leading-10">
+          <p className="text-left text-xl leading-relaxed  lg:leading-10">
             Graduated from Cochin University of Science and Technology (CUSAT), Kochi, in 2025
             with a degree in B.Tech in Computer Science and Engineering (CGPA: 9.2)
           </p>
