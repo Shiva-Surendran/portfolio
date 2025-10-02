@@ -8,15 +8,18 @@ import Link from 'next/link';
 
 const madi = Ms_Madi({
   subsets: ['latin'],
+  
   weight: "400",
 });
 
 const extrasans = Open_Sans({
   weight: "700",
+  subsets: ["latin"],
 });
 
 const sansation = Yrsa({
   weight: "700",
+  subsets: ["latin"],
 });
 
 export default function HeroSection() {
