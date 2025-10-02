@@ -83,6 +83,8 @@ export default function HeroSection() {
               lg:w-full 
               lg:h-[700px] 
               object-cover
+                  lg:border-0
+
               border-3
             "
           />
