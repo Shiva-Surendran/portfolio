@@ -1,3 +1,4 @@
+"use client"
 import {
   Ms_Madi,
   Open_Sans, Yrsa
@@ -32,7 +33,7 @@ export default function HeroSection() {
         </div>
         <nav className="flex items-center gap-4 sm:gap-6 md:gap-8 text-sm sm:text-base md:text-lg font-bold">
           <Link href="#about" scroll={true} className="hover:underline">ABOUT</Link>
-          <a href="#about" className="hover:underline">PROJECTS</a>
+          <a href="#projects" className="hover:underline">PROJECTS</a>
           <button className="hidden md: block bg-gray-200 px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full hover:bg-black hover:text-white text-sm sm:text-base">
             GET IN TOUCH
           </button>
@@ -188,7 +189,11 @@ export default function HeroSection() {
                   3D Sketches
                 </h3>
                 <p className="text-gray-600 mt-3 leading-relaxed">
-                  A collection of architectural visualization designs I have made
+                  A collection of architectural visualization designs I have made.
+                  
+                  <br></br>Access it at <a href="https://github.com/Shiva-Surendran/3dm-Files"><span className="underline">3dm Sketches</span></a>
+
+
                 </p>
               </div>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
@@ -262,20 +267,20 @@ export default function HeroSection() {
               <ul className="space-y-3 text-lg md:text-xl">
                 <li><a href="#projects" className="hover:text-white">Projects</a></li>
                 <li><a href="#blog" className="hover:text-white">Blog</a></li>
-                <li><a href="#bookmarks" className="hover:text-white">Sketches</a></li>
+                <li><a href="https://github.com/Shiva-Surendran/3dm-Files" className="hover:text-white">Sketches</a></li>
               </ul>
             </div>
 
             <div className="w-1/2 md:w-full">
               <h3 className="text-white font-semibold mb-4 text-2xl md:text-4xl">Connect</h3>
               <div className="flex flex-col space-y-3">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                <a href="https://github.com/Shiva-Surendran" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
                   <Github /> Github
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                <a href="https://www.linkedin.com/in/shiva-surendran-67066626b/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
                   <Linkedin /> LinkedIn
                 </a>
-                <a href="#" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
+                <a href="https://medium.com/@shivaasurendran" className="flex items-center gap-2 text-lg md:text-xl hover:text-white">
                   <Globe /> Medium
                 </a>
               </div>
